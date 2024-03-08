@@ -1,4 +1,4 @@
-public class BaseCat {
+public abstract class BaseCat {
 
     protected String name;
     protected int appetite;

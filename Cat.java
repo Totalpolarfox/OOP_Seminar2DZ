@@ -1,11 +1,17 @@
-public class Cat {
-    private String name;
-    private int appetite;
+public class Cat extends BaseCat{
+
     private boolean satiety; // сытость
 
+    public boolean isSatiety() {
+        return satiety;
+    }
+
+    public void setSatiety(boolean satiety) {
+        this.satiety = satiety;
+    }
+
     public Cat(String name, int appetite) {
-        this.name = name;
-        this.appetite = appetite;
+        super(name, appetite);
     }
 
     public boolean isEnoughFood(Plate plate) { // достаточно ли еды
