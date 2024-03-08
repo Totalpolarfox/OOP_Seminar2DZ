@@ -10,7 +10,14 @@
 public class Program {
     public static void main(String[] args) {
         
-        Cat cat = new Cat("Barsik", 5);
+        Cat[] cats = {
+            new Cat("Barsik", 25),
+            new Cat("Tigra", 25),
+            new Cat("Felix", 25),
+            new Cat("Belka", 15),
+            new Cat("Matilda", 15),
+            new Cat("Mario", 5),
+        };
         Plate plate = new Plate(100);
         plate.info();
         cat.eat();
