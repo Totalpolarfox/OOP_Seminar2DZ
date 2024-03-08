@@ -12,6 +12,11 @@ public class Cat {
         return plate.getFood() >= this.appetite;
     }
 
-    public void eat() { }
+    public void eat(Plate plate) {
+        if (isEnoughFood(plate)) {
+        plate.removeFood(appetite);
+        satiety = true;
+        }
+    }
 
 }
